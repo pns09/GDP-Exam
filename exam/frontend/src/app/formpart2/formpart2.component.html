@@ -1,0 +1,35 @@
+
+<form #formpart2="ngForm" (ngSubmit)="signin(formpart2)">
+ 
+  <div>
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Features</label>
+      <input type="checkbox" id="scales" name="GPS" ngModel  ng-true-value="'GPS'" ng-false-value="''"  />
+      <label for="scales">GPS</label>
+  </div>
+  <div>
+      <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
+      
+      <input type="checkbox" id="scales" name="Security Lock" ngModel ng-true-value="'Security Lock'" ng-false-value="''"/>
+      <label for="scales">Security Lock</label>
+  </div>
+  <div>
+      <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
+      
+      <input type="checkbox" id="scales" name="Cargo Mat" ngModel ng-true-value="'Cargo Mat'" ng-false-value="''"/>
+      <label for="scales">Cargo Mat</label>
+  </div>
+
+<div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Purchase Date</label>
+    <div class="col-sm-5">
+      <input type="date" class="form-control" id="inputEmail3" placeholder="Purchase Date" ngModel name="purchaseDate">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+</form>
